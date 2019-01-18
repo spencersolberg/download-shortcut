@@ -1,0 +1,21 @@
+{
+
+  "manifest_version": 2,
+  "name": "Download Shortcut",
+  "version": "1.0",
+
+  "description": "Downloads the .shortcut file from an iCloud.com/shortcuts URL.",
+
+  "icons": {
+    "48": "icons/download-shortcut-48.png",
+    "96": "icons/download-shortcut-96.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["https://www.icloud.com/shortcuts/*"],
+      "js": ["downloadShortcut.js"]
+    }
+  ]
+
+}
